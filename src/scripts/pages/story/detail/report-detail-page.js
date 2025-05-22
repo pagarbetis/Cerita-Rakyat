@@ -67,9 +67,9 @@ export default class ReportDetailPage {
   async populateReportDetailAndInitialMap(message, report) {
     document.getElementById('report-detail').innerHTML = generateReportDetailTemplate({
       description: report.description,
-      evidenceImages: report.photoUrl,
+      photoUrl: report.photoUrl,
       location : {...report.location, lat:report.lat, lon:report.lon},
-      reporterName: report.name,
+      name: report.name,
       createdAt: report.createdAt,
     });
 

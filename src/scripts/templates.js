@@ -185,8 +185,7 @@ export function generateReportDetailTemplate({
   location,
   name,
   createdAt,
-  lat,
-  lon,
+  location: { lat, lon },
 }) {
   const createdAtFormatted = showFormattedDate(createdAt, 'id-ID');
   const imagesHtml = generateReportDetailImageTemplate(photoUrl, name);
